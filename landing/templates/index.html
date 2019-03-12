@@ -1,0 +1,191 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Serena - Mental Health</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="inicio">
+        <header>
+            <nav>
+                <a href="">Home</a>
+                <a href="">Sobre Nós</a>
+                <a href="">Como Funciona</a>
+                <a href="">Cadastro</a>
+                <a href="">Download</a>
+                <button class="botao1">Login</button>
+            </nav>
+
+        </header>
+
+        <banner>
+
+            <div class="logoserena">
+                <img src="{% static 'images/serenalogo1-1.png' %}" alt="">
+            </div>
+
+            <section class="frase">
+                <p>O app que se preocupa com você.</p>
+            </section>
+
+            <section class="frase2">
+                <p>uma nova forma de cuidar da sua saúde mental</p>
+            </section>
+
+            <section class="cadastro1">
+                <button class="botao2">Cadastre-se</button>
+            </section>
+
+            <section class="logos">
+                <div class="logoapple">
+                    <a href="https://itunes.apple.com/br/genre/ios/id36?mt=8">
+                        <img src="{% static 'images/logoapple.png' %}" alt="">
+                    </a>
+                </div>
+
+                <div class="logogoogle">
+                    <a href="https://play.google.com/store/apps?hl=pt_BR">
+                        <img src="{% static 'images/logogooleplay.png' %}" alt="">
+                    </a>
+                </div>
+            </section>
+
+        </banner>
+    </div>
+
+<!-- MAIN - SOBRE -->
+
+    <main class="sobre">
+
+        <section>
+            <div class="titulo1">
+                <h1>Sobre nós</h1>
+            </div>
+        </section>
+
+        <section>
+            <div class="icone1">
+                <h2>O que é?</h2>
+                <p>Plataforma que facilita a procura por serviços de saúde mental, além de contribuir para o bem estar do usuário.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="icone2">
+                <h2>Como começou</h2>
+                <p>Criada em 2019 por uma equipe de programadores que tinham uma motivação social ao executar um projeto</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="icone3">
+                <h2>Nossa Intenção</h2>
+                <p>Promover um acesso rápido a informações e serviços de saúde mental, visando o bem estar social.</p>
+            </div>
+        </section>
+
+    </main>
+
+<!-- MAIN - FUNCIONAMENTO -->
+
+    <main class="funciona">
+        <section>
+            <div class="titulo2">
+                <h1>Funciona mento</h1>
+            </div>
+        </section>
+
+        <section class="sec1">
+            <div class="login">
+                <img src="{% static 'images/login.png' %}" alt="">
+            </div>
+            <div class="icone4">
+                <h2>Login</h2>
+                <p>Realize sua inscrição para ter acesso a plataforma.</p>
+            </div>
+        </section>
+
+        <section class="sec2">
+            <div class="relax">
+                <img src="{% static 'images/relax.png' %}" alt="">
+            </div>
+            <div class="icone5">
+                <h2>Dicas de Relaxamento</h2>
+                <p>Converse com a Serena e peça à ela dicas de relaxamento.</p>
+            </div>
+        </section>
+
+        <section class="sec3">
+            <div class="psi">
+                <img src="{% static 'images/psychology.png' %}" alt="">
+            </div>
+            <div class="icone6">
+                <h2>Atendimento</h2>
+                <p>Filtre serviços de saúde popular com a ajuda de Serena</p>
+            </div>
+        </section>
+
+        <section class="sec4">
+            <div class="chat">
+                <img src="{% static 'images/chat.png' %}" alt="">
+            </div>
+            <div class="icone7">
+                <h2>Converse</h2>
+                <p>Em breve, Serena terá acesso rápido aos seus contatos de segurança.</p>
+            </div>
+        </section>
+
+    </main>
+
+<!-- FOOTER -->
+
+    <footer>
+        <section class="minilogo">
+            <img src="{% static 'images/serenalogo1.png' %}" alt="">
+        </section>
+
+        <section class="news">
+            <h2>newsletter</h2>
+        </section>
+
+        <input type="email" placeholder="Email Address">
+        <button class="botao3">Enviar</button>
+
+
+        <section class="contato">
+                <h2>contato</h2>
+        </section>
+
+        <section class="social">
+                <h2>social</h2>
+        </section>
+
+        <section class="redes">
+
+            <div class="face">
+                <a href="">
+                    <img src="{% static 'images/iconfacebook.png' %}" alt="">
+                </a>
+            </div>
+
+            <div class="insta">
+                <a href="">
+                    <img src="{% static 'images/icontwitter.png' %}" alt="">
+                </a>
+            </div>
+
+        </section>
+    </footer>
+
+</body>
+
+</html>

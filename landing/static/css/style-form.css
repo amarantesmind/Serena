@@ -1,0 +1,48 @@
+form {
+
+    background-color: aliceblue;
+    margin: 4em auto;
+    width: 900px;
+    height: 850px;
+    padding: 1em;
+    border: 8px solid rgb(76, 233, 225);
+    border-radius: 2em;
+    align-items: center;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+h2 {
+    margin: 2.5em 0 1em 0;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+p {
+    font-size: 14pt;
+    font-style: italic;
+}
+
+body {
+    background-color: #7fff87;
+}
+
+button {
+    margin: 2em auto;
+    padding: 1em;
+    background-color: lightgreen;
+    font-size: 12pt;
+    display: flex;
+    align-items: center;
+
+}
+
+input {
+    width: 400px;
+}
