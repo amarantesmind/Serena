@@ -52,7 +52,7 @@ header a:hover{
 .inicio{
     width: auto;
     height: 790px;
-    background: url(bg-iphone2.jpg);
+    background: url(../images/bg-iphone2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -318,7 +318,7 @@ main {
 footer{
     width: auto;
     height: 831px;
-    background: url(footer2.jpg);
+    background: url(../images/footer2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
