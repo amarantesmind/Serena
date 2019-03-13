@@ -18,7 +18,7 @@ from django.urls import path
 from landing import views
 
 urlpatterns = [
-    path('/admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('', views.mostrar_index),
-    path('/cadastro/', views.mostrar_formulario)
+    path('cadastro/', views.mostrar_formulario)
 ]
