@@ -7,3 +7,6 @@ def mostrar_index(request):
 
 def mostrar_formulario(request):
     return render(request, 'formulario.html')
+
+def mostrar_login(request):
+    return render(request, 'login.html')

@@ -1,94 +1,86 @@
 {% load staticfiles %}
 
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Formulário</title>
     <link rel="stylesheet" href="{% static 'css/style-form.css' %}">
+    <title>Formulário</title>
 </head>
 <body>
-
-
-        <form action="Página de Formulário" method="POST">
-
-            <h1>Formulário de contato</h1>
-
-            <div>
-                <label for="name">Nome:</label>
-                <input type="text" maxlength="40" id="name" />
-            </div>
-            <div>
-                <label for="mail">E-mail:</label>
-                <input type="email" maxlength="40" id="mail" />
-            </div>
-            <div>
-                <label for="tel">Telefone:</label>
-                <input type="tel" maxlength="15" id="tel" />
-            </div>
-
-            <h2>Contatos de emergencia:</h2>
-
-
-            <div>
-
-                <p>Contato 1</p>
-
-                    <label for="name">Nome:</label>
-                    <input type="text" maxlength="40" id="name" />
-                </div>
-                <div>
-                    <label for="mail">E-mail:</label>
-                    <input type="email" maxlength="40" id="mail" />
-                </div>
-                <div>
-                    <label for="tel">Telefone:</label>
-                    <input type="tel" maxlength="15" id="tel" />
-                </div>
-
-            <div>
-
-                    <p>Contato 2</p>
-    
-                        <label for="name">Nome:</label>
-                         <input type="text" maxlength="40" id="name" />
-                    </div>
-                    <div>
-                        <label for="mail">E-mail:</label>
-                        <input type="email" maxlength="40" id="mail" />
-                    </div>
-                    <div>
-                        <label for="tel">Telefone:</label>
-                        <input type="tel" maxlength="15" id="tel" />
-                    </div>
-
-            <div>
-
-                <p>Contato 3</p>
-
-                    <label for="name">Nome:</label>
-                    <input type="text" maxlength="40" id="name" />
-                </div>
-                <div>
-                    <label for="mail">E-mail:</label>
-                    <input type="email" maxlength="40" id="mail" />
-                </div>
-                <div>
-                    <label for="tel">Telefone:</label>
-                    <input type="tel" maxlength="15" id="tel" />
-                </div>
-
-
-            <div class="button">
-                <button type="submit">Enviar Formulario</button>
-            </div>
-
+    <form action="Página de Formulário" method="POST">
+        
+        <h1>Formulário de contato</h1>
+        
+        <div>
+            <label for="name">Nome:</label>
+            <input type="text" maxlength="40" id="name" />
+        </div>
+        <div>
+            <label for="mail">E-mail:</label>
+            <input type="email" maxlength="40" id="mail" />
+        </div>
+        <div>
+            <label for="tel">Telefone:</label>
+            <input type="tel" maxlength="15" id="tel" />
+        </div>
+        
+        <h2>Contatos de emergência:</h2>
+        
+        <div>
             
-        </form>
-    
+            <p>Contato 1</p>
+            
+            <label for="name">Nome:</label>
+            <input type="text" maxlength="40" id="name" />
+        </div>
+        <div>
+            <label for="mail">E-mail:</label>
+            <input type="email" maxlength="40" id="mail" />
+        </div>
+        <div>
+            <label for="tel">Telefone:</label>
+            <input type="tel" maxlength="15" id="tel" />
+        </div>
+        
+        <div>
+            
+            <p>Contato 2</p>
+            
+            <label for="name">Nome:</label>
+            <input type="text" maxlength="40" id="name" />
+        </div>
+        <div>
+            <label for="mail">E-mail:</label>
+            <input type="email" maxlength="40" id="mail" />
+        </div>
+        <div>
+            <label for="tel">Telefone:</label>
+            <input type="tel" maxlength="15" id="tel" />
+        </div>
+        
+        <div>
+            
+            <p>Contato 3</p>
+            
+            <label for="name">Nome:</label>
+            <input type="text" maxlength="40" id="name" />
+        </div>
+        <div>
+            <label for="mail">E-mail:</label>
+            <input type="email" maxlength="40" id="mail" />
+        </div>
+        <div>
+            <label for="tel">Telefone:</label>
+            <input type="tel" maxlength="15" id="tel" />
+        </div>
+        
+        
+        <div class="button">
+            <button type="submit">Enviar Formulário</button>
+        </div>
+    </form>
 </body>
 </html>
