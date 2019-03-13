@@ -45,7 +45,7 @@ header a{
 }
 
 header a:hover{
-    color:white;
+    color:#f7f7f9;
     transition: 0.75s;
 }
 
@@ -386,3 +386,76 @@ input{
     width: 50px;
     height: auto;
 }
+
+
+/* MEDIA QUERY */
+
+/* HEADER */
+
+@media(max-width: 425px) {
+    header {
+        display: none;
+    }
+    .logoserena img {
+        width: auto;
+        height: 90px;
+        padding: 0;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .frase p{
+        transform: translate(0, -80px);
+    }
+    .frase2 p{
+        transform: translate(0, -150px);
+        font-size: 12px;
+    }
+    .cadastro1 .botao2{
+        transform: translate(120px, -70px);
+        width: 200px;
+        height: 60px;
+    }
+    .logos{
+        transform: translate(-150px,290px);
+    }
+    .inicio{
+        background: url(../images/bg-responsivo.jpg);
+        background-size: cover; height: 100vh; width: 120vh;
+        background-position: center;
+    }
+
+    /* MAIN - SOBRE */
+    .sobre{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .titulo1{
+        color: #7FFF87;
+        transform: rotate(0deg);
+    }
+    .titulo1 h1{
+        font-size: 50px;
+        transform: translate(40px, 50px);
+    }
+
+    /* MAIN - FUNCIONAMENTO */
+    .funciona{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .titulo2{
+        transform: rotate(0deg);
+    }
+    .titulo2 h1{
+        font-size: 35px;
+        transform: translate(40px, 50px);
+    }
+
+
+}
+
+
