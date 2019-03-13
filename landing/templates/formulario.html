@@ -12,21 +12,72 @@
 <body>
     <form action="Página de Formulário" method="POST">
         
-        <h1>Formulário de contato</h1>
+        <h1>Cadastro</h1>
         
         <div>
-            <label for="name">Nome:</label>
-            <input type="text" maxlength="40" id="name" />
+            <label for="username">Username</label>
+            <input type="text" maxlength="40" id="username">
         </div>
         <div>
-            <label for="mail">E-mail:</label>
-            <input type="email" maxlength="40" id="mail" />
+            <label for="senha">Senha</label>
+            <input type="password" maxlength="20" id="senha">
         </div>
         <div>
-            <label for="tel">Telefone:</label>
-            <input type="tel" maxlength="15" id="tel" />
+            <label for="name">Nome completo</label>
+            <input type="text" maxlength="50" id="name">
         </div>
-        
+        <div>
+            <label for="mail">E-mail</label>
+            <input type="email" maxlength="50" id="mail">
+        </div>
+        <div>
+            <label for="tel">Celular</label>
+            <input type="tel" maxlength="15" id="tel">
+        </div>
+        <div>
+            <label for="rua">Endereço</label>
+            <input type="text" maxlength="80" id="rua">
+        </div>
+        <div>
+            <label for="numero">Número</label>
+            <input type="number" maxlength="10" id="numero">
+        </div>
+        <div>
+            <label for="complemento">Complemento</label>
+            <input type="text" maxlength="20" id="complemento">
+        </div>
+        <div>
+            <label for="">Bairro</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="cep">CEP</label>
+            <input type="number" maxlength="8" id="cep">
+        </div>
+        <div>
+            <label for="cidade">Cidade</label>
+            <input type="text" maxlength="40" id="cidade">
+        </div>
+        <div>
+            <label for="estado">Estado</label>
+            <input type="text" maxlength="40" id="estado">
+        </div>
+        <div>
+            <label for="nascimento">Nascimento</label>
+            <input type="date" maxlength="8" id="nascimento">
+        </div>
+        <div>
+            <label for="sexo">Sexo</label>
+            <select name="sexo" id="">
+                <option value="fem">Feminino</option> 
+                <option value="masc">Masculino</option>
+            </select>
+        </div>
+        <div>
+            <label for="profissao">Profissão</label>
+            <input type="text" maxlength="40" id="profissao">
+        </div>
+
         <h2>Contatos de emergência:</h2>
         
         <div>
@@ -46,7 +97,6 @@
         </div>
         
         <div>
-            
             <p>Contato 2</p>
             
             <label for="name">Nome:</label>
@@ -59,28 +109,14 @@
         <div>
             <label for="tel">Telefone:</label>
             <input type="tel" maxlength="15" id="tel" />
-        </div>
-        
-        <div>
-            
-            <p>Contato 3</p>
-            
-            <label for="name">Nome:</label>
-            <input type="text" maxlength="40" id="name" />
-        </div>
-        <div>
-            <label for="mail">E-mail:</label>
-            <input type="email" maxlength="40" id="mail" />
-        </div>
-        <div>
-            <label for="tel">Telefone:</label>
-            <input type="tel" maxlength="15" id="tel" />
-        </div>
-        
-        
+        </div>            
         <div class="button">
             <button type="submit">Enviar Formulário</button>
         </div>
     </form>
+
+    <!-- <form action="">
+        {{form.as_p}}
+    </form> -->
 </body>
 </html>
