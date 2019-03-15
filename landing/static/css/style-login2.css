@@ -5,34 +5,43 @@ body {
     height: auto;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-    background: url(../images/footer2.jpg);
+    background: url(../images/bglogin3.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-y: hidden;
 }
 
 .texto h1{
     color: white;
     font-size: 40px;
+    margin-left: 30px;
+
+}
+
+.logoserena img{
+    width: auto;
+    height: 280px;
+    margin-left: 590px; 
 }
 
 .login-page {
     width: 360px;
-    padding: 8% 0 0;
+    /* padding: 8% 0 0; */
     margin: auto;
-   transform: translate(0, 150px);
+    transform: translate(0, 10px);
 }
 
 .form {
     position: relative;
     z-index: 1;
-    background: #FFFFFF;
+    /* background: #FFFFFF; */
     max-width: 360px;
     margin: 0 auto 100px;
     padding: 45px;
     text-align: center;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgb(0, 0, 0, 0.24);
+    /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgb(0, 0, 0, 0.24); */
 }
 
 .form input {
@@ -118,4 +127,22 @@ body {
 .container .info span a {
     color: #000000;
     text-decoration: none;
+}
+
+.contato h2{
+    font-size: 30px;
+    transform: translate(500px, -50px);
+    color: white;
+}
+
+.social h2{
+    font-size: 30px;
+    color: white;
+    transform: translate(900px, -115px);
+}
+
+.mailproject h3{
+    color: white;
+    font-size: 29px;
+    transform: translate(190px, -80px);
 }

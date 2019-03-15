@@ -3,7 +3,7 @@ from .forms import UsuarioForm
 # Create your views here.
 
 def mostrar_index(request):
-    return render(request, 'index.html')
+    return render(request, 'index2.html')
 
 def mostrar_formulario(request):
     form = UsuarioForm(request.POST)
@@ -14,4 +14,4 @@ def mostrar_formulario(request):
     return render(request, 'formulario.html', contexto)
 
 def mostrar_login(request):
-    return render(request, 'login.html')
+    return render(request, 'login2.html')

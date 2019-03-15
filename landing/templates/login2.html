@@ -1,0 +1,60 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/style-login2.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Serena - Mental Health</title>
+</head>
+
+<body>
+
+    <header>
+        <section class="texto">
+            <h1>FAÇA LOGIN NA SUA CONTA</h1>
+        </section>
+    </header>
+
+    <div class="logoserena">
+        <img src="{% static 'images/serenalogo1-1.png' %}" alt="">
+    </div>
+
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form">
+                <input type="text" placeholder="name" />
+                <input type="password" placeholder="password" />
+                <input type="text" placeholder="email address">
+            </form>
+
+            <form class="login-form">
+                <input type="text" placeholder="username" />
+                <input type="password" placeholder="password" />
+                <button>login</button>
+
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <section class="contato">
+            <h2>CONTATO</h2>
+        </section>
+        
+        <section class="social">
+            <h2>SOCIAL</h2>
+        </section>
+
+        <section class="mailproject">
+            <h3>contato@projetoserena.com</h3>
+        </section>
+    </footer>
+
+</body>
+
+</html>
