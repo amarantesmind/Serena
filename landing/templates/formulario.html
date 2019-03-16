@@ -18,7 +18,7 @@
 
     <p>Contato 2</p>
 
-    <form class="formulCadastro" action="." method="POST">
+    <form class="formulCadastro" action="/cadastro" method="POST">
         {% csrf_token %}
         {{form.as_p}}
         <button>Enviar</button>

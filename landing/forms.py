@@ -5,6 +5,9 @@ from landing.models import Cadastro
 class CadastroForm(forms.ModelForm):
     class Meta:
         model = Cadastro
+        widgets = {
+            'senha': forms.PasswordInput(),
+        }
         fields = [
             'username',
             'senha',
