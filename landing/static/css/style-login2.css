@@ -24,6 +24,7 @@ body {
     width: auto;
     height: 280px;
     margin-left: 590px; 
+    transform: translate(0, 40px);
 }
 
 .login-page {
@@ -138,11 +139,26 @@ body {
 .social h2{
     font-size: 30px;
     color: white;
-    transform: translate(900px, -115px);
+    transform: translate(890px, -115px);
 }
 
 .mailproject h3{
     color: white;
-    font-size: 29px;
-    transform: translate(190px, -80px);
+    font-size: 20px;
+    transform: translate(499px, -140px);
+}
+
+.redes {
+    display: flex;
+    transform: translate(890px, -390%);
+}
+
+.face img {
+    width: 45px;
+    height: auto;
+}
+
+.insta img {
+    width: 45px;
+    height: auto;
 }

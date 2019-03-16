@@ -70,6 +70,11 @@
      padding: 10px;
  }
 
+.frase{
+    padding: 0;
+    margin: 0;
+} 
+
  .frase p {
      width: 900px;
      padding: 15px;
@@ -203,10 +208,12 @@
  .titulo2 {
      color: white;
      transform: rotate(270deg);
+     transform: translate(100px,900px)
  }
 
  .titulo2 h1 {
      font-weight: 800;
+     transform: translate(100px,900px)
  }
 
  .funciona section {
@@ -424,6 +431,27 @@
      height: auto;
  }
 
+ .menu-hamburguer {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    justify-content: center;
+    width: 30px;
+  }
+
+  .traco {
+    background-color: black;
+    border-radius: 30px;
+    display: block;
+    height: 3px;
+    margin: 4.25px 0;
+    transition: 0.5s;
+    width: 100%;
+  }
+
+  
 
  /* MEDIA QUERY */
 
@@ -442,8 +470,15 @@
          margin-top: 10px;
      }
 
+     .frase{
+         height: auto;
+         margin: 0;
+         padding: 0;
+     }
+
      .frase p {
          transform: translate(0, -80px);
+         font-size: 10px;
      }
 
      .frase2 p {
