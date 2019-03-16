@@ -6,11 +6,6 @@ def mostrar_index(request):
     return render(request, 'index2.html')
 
 def mostrar_formulario(request):
-    form = UsuarioForm(request.POST)
-
-    contexto = {
-        'form': form
-    }
     return render(request, 'formulario.html', contexto)
 
 def mostrar_login(request):
