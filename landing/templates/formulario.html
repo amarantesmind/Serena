@@ -10,10 +10,18 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <form action="Página de Cadastro" method="POST">
-        
-    <!-- <form action="">
+    <p>Cadastro</p>
+
+    <p>Contatos de Emergência</p>
+
+    <p>Contato 1</p>
+
+    <p>Contato 2</p>
+
+    <form class="formulCadastro" action="." method="POST">
+        {% csrf_token %}
         {{form.as_p}}
-    </form> -->
+        <button>Enviar</button>
+    </form>
 </body>
 </html>
