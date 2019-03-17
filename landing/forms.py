@@ -15,7 +15,6 @@ class CadastroForm(forms.ModelForm):
             'email',
             'celular',
             'cep',
-            'numero',
             'nascimento',
             'sexo',
             'profissao',

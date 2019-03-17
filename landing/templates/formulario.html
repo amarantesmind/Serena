@@ -10,16 +10,16 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <p>Cadastro</p>
-
-    <p>Contatos de Emergência</p>
-
-    <p>Contato 1</p>
-
-    <p>Contato 2</p>
-
     <form class="formulCadastro" action="/cadastro" method="POST">
         {% csrf_token %}
+        <p>Cadastro</p>
+
+        <p>Contatos de Emergência</p>
+    
+        <p>Contato 1</p>
+    
+        <p>Contato 2</p>
+
         {{form.as_p}}
         <button>Enviar</button>
     </form>
