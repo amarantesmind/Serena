@@ -1,1 +1,1 @@
-web:gunicorn serena.wsgi
+web: gunicorn serena.wsgi
