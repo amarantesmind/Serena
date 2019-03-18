@@ -10,6 +10,12 @@
 
  /* HEADER */
 
+ header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
  .botao1 {
      float: right;
      border: 7px solid white;
@@ -26,12 +32,14 @@
      border: 7px solid black;
      transition: 0.90s;
  }
-
- header nav {
-     display: flex;
-     float: right;
-     padding: 8px;
- }
+ 
+ .nav-menu-hamburguer {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    transform: translateX(-100%);
+    transition: 1s;
+  }
 
  header a {
      display: inline-block;
@@ -61,8 +69,14 @@
  }
 
  .inicio nav {
-     align-items: center;
+     /* display: flex;
+     align-items: center; */
+     width: 900px;
  }
+.inicio nav div{
+    display: flex;
+    align-items: center;
+}
 
  .logoserena img {
      width: 80px;
@@ -89,7 +103,7 @@
  }
 
  .frase2 p {
-     width: 900px;
+     width: 1100px;
      padding: 15px;
      text-transform: uppercase;
      letter-spacing: 1.2px;
@@ -431,26 +445,47 @@
      height: auto;
  }
 
- .menu-hamburguer {
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    height: 30px;
-    justify-content: center;
-    width: 30px;
-  }
+                                                        /* MENU-HAMBURGUER */
+.menu-hamburguer {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 30px;
+  justify-content: center;
+  width: 30px;
+}
 
-  .traco {
-    background-color: black;
-    border-radius: 30px;
-    display: block;
-    height: 3px;
-    margin: 4.25px 0;
-    transition: 0.5s;
-    width: 100%;
-  }
+.traco {
+  background-color: black;
+  border-radius: 30px;
+  display: block;
+  height: 3px;
+  margin: 4.25px 0;
+  transition: 0.5s;
+  width: 100%;
+}
 
+.traco-1, .traco-3 {
+  transform-origin: right center;
+}
+
+.menu-hamburguer.ativo .traco-1 {
+  transform: rotateZ(-45deg);
+}
+
+.menu-hamburguer.ativo .traco-2 {
+  opacity: 0;
+}
+
+.menu-hamburguer.ativo .traco-3 {
+  transform: rotateZ(45deg);
+}
+
+.visivel {
+  transform: translateX(0);
+  display: block;
+}
   
 
  /* MEDIA QUERY */
