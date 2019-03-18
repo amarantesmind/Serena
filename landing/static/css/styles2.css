@@ -208,12 +208,12 @@
  .titulo2 {
      color: white;
      transform: rotate(270deg);
-     transform: translate(100px,900px)
+     
  }
 
  .titulo2 h1 {
      font-weight: 800;
-     transform: translate(100px,900px)
+     transform: translate(-100px,-65px);
  }
 
  .funciona section {
