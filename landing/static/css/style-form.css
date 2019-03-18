@@ -1,18 +1,26 @@
-form {
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #7fff87; */
+}
 
-    background-color: aliceblue;
+form {
+    background: url(../images/bg-responsivo.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 120vh;
+    background-position: center;
     margin: 4em auto;
     width: 900px;
     height: 850px;
     padding: 1em;
-    border: 8px solid rgb(76, 233, 225);
+    /* border: 8px solid #7FFF87; */
     border-radius: 2em;
     align-items: center;
 }
 
-form div + div {
+/* form div + div {
     margin-top: 1em;
-}
+} */
 
 h2 {
     margin: 2.5em 0 1em 0;
@@ -25,22 +33,22 @@ label {
 }
 
 p {
-    font-size: 14pt;
-    font-style: italic;
-}
-
-body {
-    background-color: #7fff87;
+    font-size: 16pt;
+    /* display: flex; */
 }
 
 button {
     margin: 2em auto;
     padding: 1em;
-    background-color: lightgreen;
     font-size: 12pt;
     display: flex;
     align-items: center;
-
+    border: 7px solid white;
+    border-radius: 25px;
+    background-color:#7FFF87;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 input {

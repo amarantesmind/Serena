@@ -9,7 +9,7 @@ class CadastroForm(forms.ModelForm):
             'senha': forms.PasswordInput(),
         }
         fields = [
-            'username',
+            'user',
             'senha',
             'nome',
             'email',
@@ -18,10 +18,11 @@ class CadastroForm(forms.ModelForm):
             'nascimento',
             'sexo',
             'profissao',
+            'grau_parentesco',
             'nome_emergencia1',
             'email_emergencia1',
             'tel_emergencia1',
-            'nome_emergencia2',
-            'email_emergencia2',
-            'tel_emergencia2',
+            # 'nome_emergencia2',
+            # 'email_emergencia2',
+            # 'tel_emergencia2',
         ]

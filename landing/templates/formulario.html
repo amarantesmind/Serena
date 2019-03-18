@@ -7,18 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{% static 'css/style-form.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <title>Cadastro</title>
 </head>
 <body>
     <form class="formulCadastro" action="/cadastro" method="POST">
         {% csrf_token %}
         <p>Cadastro</p>
-
-        <p>Contatos de Emergência</p>
-    
-        <p>Contato 1</p>
-    
-        <p>Contato 2</p>
 
         {{form.as_p}}
         <button>Enviar</button>

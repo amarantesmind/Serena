@@ -10,6 +10,18 @@
     <script defer src="scripts.js"></script>
     <link rel="stylesheet" href="{% static 'css/styles2.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
+    </script>
+    <script>
+        (function () {
+            window.onload = function () {
+                new BlipChat()
+                .withAppKey('c2VyZW5hOjM1MDBmMDlhLWU2NzYtNDJjMS05ODQ1LWQ4ZWI3YTI4YTYxYQ==')
+                .withButton({"color":"#2CC3D5","icon":""})
+                .build();
+            }
+        })();
+    </script>
 
     <title>Serena - Mental Health</title>
 </head>
@@ -29,12 +41,12 @@
                 <a href="/login"><button class="botao1">Login</button></a>
             </nav>
 
-             <h3>Título</h3>
-                    <div class="menu-hamburguer">
-                      <span class="traco traco-1"></span>
-                      <span class="traco traco-2"></span>
-                      <span class="traco traco-3"></span>
-                    </div>
+
+            <div class="menu-hamburguer">
+                <span class="traco traco-1"></span>
+                <span class="traco traco-2"></span>
+                <span class="traco traco-3"></span>
+            </div>
         </header>
 
 
@@ -178,7 +190,7 @@
                 <input type="email" placeholder="Email Address">
                 <button class="botao3">Enviar</button>
             </form>
-            
+
             <h2>contato</h2>
 
             <section class="mailproject">
@@ -201,7 +213,7 @@
                         <img src="{% static 'images/icontwitter.png' %}" alt="">
                     </a>
                 </div>
-             </section>
+            </section>
 
         </div>
     </footer>
