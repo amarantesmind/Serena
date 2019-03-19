@@ -20,3 +20,6 @@ def mostrar_formulario(request):
 
 def mostrar_login(request):
     return render(request, 'login2.html')
+
+def mostrar_conta(request):
+    return render(request, 'conta.html')

@@ -18,10 +18,10 @@
 
  .botao1 {
      float: right;
-     border: 7px solid white;
+     border: 7px solid #7FFF87;
      border-radius: 25px;
-     background-color: white;
-     color: #7FFF87;
+     background-color: #7FFF87;
+     color: white;
      text-transform: uppercase;
      cursor: pointer;
  }
@@ -457,13 +457,14 @@
 }
 
 .traco {
-  background-color: black;
+  background-color: white;
   border-radius: 30px;
   display: block;
   height: 3px;
   margin: 4.25px 0;
   transition: 0.5s;
   width: 100%;
+  transform: translate(-10px);
 }
 
 .traco-1, .traco-3 {

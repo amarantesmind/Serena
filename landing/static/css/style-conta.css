@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+.lateral{
+    background-color:#7FFF87;
+    width: 280px;
+    height: 100vh;
+}
+
+h1 .g{
+   font-size: 90px;  
+   padding: 0 10px;
+   display: flex;
+}
+
+h2{
+    padding: 0 10px;
+}
