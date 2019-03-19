@@ -9,7 +9,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/style-conta.css' %}">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <title>Bem-vindo(a)!</title>
 </head>
 
@@ -27,20 +26,34 @@
         <main>
             <img src="../static/images/user-foto.png" alt="">
 
-         <div class="perfil">
-           <p class="user">Terry Crews</p>
-            <a href="" class="palavraperfil">Perfil</a>
-            <a href="">Configurações</a>
-         </div>
+            <div class="perfil">
+                <p class="user">Terry Crews</p>
+                <a href="" class="palavraperfil">Perfil</a>
+                <a href="">Configurações</a>
+            </div>
         </main>
 
         <div class="sidebar">
-            <p>Dicas de Relaxamento</p>
+            <div class="jornal">
+                <p>Dicas Semanais</p>
+                <img src="{% static 'images/relaxa02.jpg' %}" alt="">
+                <p id="dez">
+                    10 dicas para relaxar em 60 segundos
+                </p>
+                <p id="cont">
+                        Nas grandes cidades o dia começa mal. Grande parcela da população <br> fica presa no trânsito. Ficar preso no trânsito tira qualquer um do sério. <br> Para espanto de muitos, a capital paulistana não é a recorde em tempo <br> perdido nos deslocamentos.
+                </p>
+                <img  id="relex" src="{% static 'images/relaxa.jpg' %}" alt="">
+                <P id="saude">
+                    O que é saude mental?
+                </P>
+                <img id="geo" src="{% static 'images/referenciamento.png' %}" alt="">
+                <P id="geo2">
+                    Procure aqui seu psicólogo!
+                </P>
+            </div>
 
         </div>
-        <footer>
-            <p>tchau</p>
-        </footer>
     </div>
 </body>
 

@@ -22,5 +22,5 @@ urlpatterns = [
     path('', views.mostrar_index),
     path('cadastro', views.mostrar_formulario),
     path('login', views.mostrar_login),
-    path('conta', views.mostrar_conta),
+    path('conta', views.mostrar_conta, name="conta"),
 ]
