@@ -1,7 +1,8 @@
 body{
     margin: 0;
     padding: 0;
-    
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .grid{
@@ -17,7 +18,6 @@ body{
 
 }
 
-
 header {
     align-items: center;
     grid-area: header;
@@ -26,7 +26,8 @@ header {
     margin-block-end: 0;
     padding: 0;
     width:153vh;
-    
+    height: 100px;
+    background-color: #e3e6e7;
 
 }
 
@@ -35,20 +36,58 @@ header nav{
     justify-content:space-between;
     margin-left: 700px;
     align-items: center;
-    transform: translateX(-10%);
+    transform: translate(-30%, 40px);
+
+    
+}
+
+header nav a{
+    text-decoration: none;
     
 }
 
 main{
+    margin: 0;
     display: grid;
     grid-area: main;
-    background-color: green;
+    background:-webkit-linear-gradient(#7FFF87,#70c0e6);
     height: 100vh;
+}
+
+main .perfil{
+    margin: 0;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+
+main .user{
+transform: translate(85px, -190px);
+font-size: 30px;
+
+}
+
+.perfil a{
+    color: white;
+}
+
+main a{
+    font-size: 19px;
+    transform: translate(0, -150px);
+}
+
+.palavraperfil{
+    margin-block-end: 12px;
 }
 img{
     height: 150px;
     width: auto;
+    transform: translate(95px,70px);
 }
+
 
 .sidebar{
     display: grid;
@@ -65,14 +104,15 @@ footer{
 h1{
     text-decoration: none;
     letter-spacing: 5px;
+    transform: translate(-130px, -10px);
 
 }
 a{
     text-decoration: none;
-    letter-spacing: 5px;
+    /* letter-spacing: 5px; */
     margin-left: 20px;
 }
 
 a:hover{
-    color: red;
+    color: #7FFF87;
 }
