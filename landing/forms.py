@@ -7,9 +7,13 @@ class CadastroForm(forms.ModelForm):
         model = Cadastro
         widgets = {
             'senha': forms.PasswordInput(),
+            'email': forms.EmailInput(),
+            'cep': forms.DateTimeInput(),
+            'nascimento': forms.DateTimeInput(),
+            'tel_emergencia1': forms.DateInput(),
         }
         fields = [
-            'user',
+            'username',
             'senha',
             'nome',
             'email',
@@ -22,7 +26,4 @@ class CadastroForm(forms.ModelForm):
             'nome_emergencia1',
             'email_emergencia1',
             'tel_emergencia1',
-            # 'nome_emergencia2',
-            # 'email_emergencia2',
-            # 'tel_emergencia2',
         ]

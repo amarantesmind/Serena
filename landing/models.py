@@ -14,24 +14,21 @@ class Cadastro(models.Model):
         (NAO_BINARIO, 'Não binário')
     ]
 
-    user = models.CharField(max_length=30)
+    username = models.CharField(max_length=30, verbose_name="User")
     senha = models.CharField(max_length=15)
     nome = models.CharField(max_length=40)
     email = models.EmailField(verbose_name="E-mail")
-    celular = models.PositiveIntegerField()
-    cep = models.PositiveIntegerField(verbose_name="CEP")
+    celular = models.CharField(max_length=11)
+    cep = models.CharField(max_length=8, verbose_name="CEP")
     nascimento = models.DateTimeField(max_length=8)
     sexo = models.CharField(max_length=3, verbose_name="Gênero", choices=GENERO, default=FEMININO)
     profissao = models.CharField(max_length=40, verbose_name="Profissão")
-    grau_parentesco = models.CharField(max_length=10)
+    grau_parentesco = models.CharField(max_length=10, default='')
     nome_emergencia1 = models.CharField(max_length=30, verbose_name="Nome")
     email_emergencia1 = models.EmailField(verbose_name="E-mail")
     tel_emergencia1 = models.PositiveIntegerField(verbose_name="Telefone")
-    # nome_emergencia2 = models.CharField(max_length=30, verbose_name="Nome")
-    # email_emergencia2 = models.EmailField(verbose_name="E-mail")
-    # tel_emergencia2 = models.PositiveIntegerField(verbose_name="Telefone")
 
     def __str__(self):
-        return self.user
+        return self.username
 
     
