@@ -12,6 +12,7 @@
 
  header {
     display: flex;
+    align-items: flex-end;
     justify-content: space-between;
     padding: 0 10px;
   }
@@ -34,8 +35,9 @@
  }
  
  .nav-menu-hamburguer {
-    align-items: center;
-    justify-content: space-between;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;  
     padding: 0 10%;
     transform: translateX(-100%);
     transition: 1s;
@@ -51,6 +53,7 @@
      font-weight: 500;
      font-size: 14px;
      margin: 3px;
+     height: inherit;
  }
 
  header a:hover {
@@ -485,7 +488,7 @@
 
 .visivel {
   transform: translateX(0);
-  display: block;
+  display: flex;
 }
   
 

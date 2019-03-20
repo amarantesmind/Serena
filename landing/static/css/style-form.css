@@ -37,6 +37,11 @@ p {
     /* display: flex; */
 }
 
+.cad {
+    text-align: center;
+    width: 604px;
+}
+
 button {
     margin: 2em auto;
     padding: 1em;

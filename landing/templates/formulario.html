@@ -13,7 +13,7 @@
 <body>
     <form class="formulCadastro" action="/cadastro" method="POST">
         {% csrf_token %}
-        <p>Cadastro</p>
+        <p class="cad">Cadastro</p>
 
         {{form.as_p}}
         <button>Enviar</button>

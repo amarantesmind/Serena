@@ -1,11 +1,12 @@
-body{
+body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow: hidden;
     font-family: 'Montserrat', sans-serif;
+    height: 100vh;
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: repeat(4,25vw);
     grid-template-rows: repeat(4, auto);
@@ -14,8 +15,6 @@ body{
       "main sidebar sidebar sidebar"
       "main sidebar sidebar sidebar"
       "main sidebar sidebar sidebar";
-      
-
 }
 
 header {
@@ -28,25 +27,21 @@ header {
     width:165vh;
     height: 100px;
     background-color: #e3e6e7;
-
 }
 
-header nav{
+header nav {
     display: flex;
     justify-content:space-between;
     margin-left: 700px;
     align-items: center;
     transform: translate(-30%, 40px);
-
-    
 }
 
-header nav a{
+header nav a {
     text-decoration: none;
-    
 }
 
-main{
+main {
     margin: 0;
     display: grid;
     grid-area: main;
@@ -54,7 +49,7 @@ main{
     height: 100vh;
 }
 
-main .perfil{
+main .perfil {
     margin: 0;
     display: flex;
 	flex-direction: column;
@@ -64,62 +59,75 @@ main .perfil{
 	align-content: flex-start;
 }
 
-main .user{
+main .user {
 transform: translate(85px, -130px);
 font-size: 30px;
 
 }
 
-.perfil a{
+.perfil a {
     color: white;
 }
 
-main a{
+main a {
     font-size: 19px;
     transform: translate(0, -150px);
 }
 
-.palavraperfil{
+.palavraperfil{ 
     margin-block-end: 12px;
 }
-img{
-    height: 150px;
+
+img {
+    height: 250px;
     width: auto;
-    transform: translate(95px,20px);
+    transform: translate(-51px,20px);
 }
 
 
-.sidebar{
+.sidebar {
     display: grid;
     grid-area: sidebar;
     width:153vh;
-    
 }
 
-.jornal p{
+.jornal p {
     display: flex;
     font-size: 30px;
     transform: translate(50px, -10px);
 }
-#dez{
+
+#dez {
     font-size: 20px;
 }
-#cont{
+
+#cont {
     font-size: 14px;
 }
-#saude{
+
+#saude {
     display: flex;
     transform: translate(655px,-500px);
     font-size: 20px;
-    
-
 }
+
 .jornal img {
     display: flex;
     transform: translate(50px, -26px);
-    height: 50vh;
+    height: 35vh;
     width: 80vh;
 }
+
+#imagem-relax{
+    object-fit: cover;
+    object-position: 0px -60px;
+    
+}
+
+#container{
+    margin: 80px 0 0 0;
+}
+
 #relex{
     display:flex;
     transform: translate(655px, -488px);
@@ -127,30 +135,31 @@ img{
     width: 40vh;
 }
 
-#geo{
+#geo {
     display: flex;
     transform: translate(655px,-480px);
     height: 25vh;
     width: 40vh;
 }
 
-#geo2{
+#geo2 {
     display: flex;
     transform: translate(655px,-480px);
     font-size: 20px;
 }
-h1{
+
+h1 {
     text-decoration: none;
     letter-spacing: 5px;
     transform: translate(-40px, -10px);
-
 }
-a{
+
+a {
     text-decoration: none;
     /* letter-spacing: 5px; */
     margin-left: 20px;
 }
 
-a:hover{
+a:hover {
     color: #7FFF87;
 }
